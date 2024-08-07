@@ -147,36 +147,94 @@
             </div>
           </div>
           <div class="slide-section">
-            <div class="slide">
-              <div class="slide_title">
-                <h1>What our customer are saying</h1>
-              </div>
-              <div class="slide_text">
-                <div class="avt">
-                  <div class="avt-img"><img src="./IMG/avt.png" alt="" /></div>
-                  <div class="avt-info">
-                    <h2>Edward Newgate</h2>
-                    <span>Founder Circle</span>
+            <div class="slides">
+              <div class="slide">
+                <div class="slide_title">
+                  <h1>What our customers are saying</h1>
+                </div>
+                <div class="slide_text">
+                  <div class="avt">
+                    <div class="avt-img"><img src="./IMG/avt.png" alt="Avatar" /></div>
+                    <div class="avt-info">
+                      <h2>Edward Newgate</h2>
+                      <span>Founder Circle</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      “Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedious form, long calls, or administrative hassle) and securely”
+                    </p>
                   </div>
                 </div>
-                <div class="text">
-                  <p>
-                    “Our dedicated patient engagement app and web portal allow
-                    you to access information instantaneously (no tedeous form,
-                    long calls, or administrative hassle) and securely”
-                  </p>
-                </div>
               </div>
+
+              <div class="slide">
+                <div class="slide_title">
+                    <h1>Another 2</h1>
+                </div>
+                <div class="slide_text">
+                    <div class="avt">
+                        <div class="avt-img"><img src="./IMG/another-avt.png" alt="Avatar" /></div>
+                        <div class="avt-info">
+                            <h2>2</h2>
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>
+                            “Another testimonial text goes here”
+                        </p>
+                    </div>
+                </div>
+            </div>
+              <div class="slide">
+                <div class="slide_title">
+                    <h1>Another 3</h1>
+                </div>
+                <div class="slide_text">
+                    <div class="avt">
+                        <div class="avt-img"><img src="" alt="Avatar" /></div>
+                        <div class="avt-info">
+                            <h2>Another Person</h2>
+                            <span>CEO</span>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>
+                            “Another testimonial text goes here”
+                        </p>
+                    </div>
+                </div>
+            </div>
+              <div class="slide">
+                <div class="slide_title">
+                    <h1>Another 4</h1>
+                </div>
+                <div class="slide_text">
+                    <div class="avt">
+                        <div class="avt-img"><img src="" alt="Avatar" /></div>
+                        <div class="avt-info">
+                            <h2>Another Person</h2>
+                            <span>CEO</span>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>
+                            “Another testimonial text goes here”
+                        </p>
+                    </div>
+                </div>
+            </div>
             </div>
             <div class="navigation">
-              <div class="arrow left-arrow">&#8592;</div>
+              <div class="arrow left-arrow" onclick="moveSlide(-1)">&#8592;</div>
               <div class="dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+                <div class="dot active" onclick="currentSlide(0)"></div>
+                <div class="dot" onclick="currentSlide(1)"></div>
+                <div class="dot" onclick="currentSlide(2)"></div>
+                <div class="dot" onclick="currentSlide(3)"></div>
               </div>
-              <div class="arrow right-arrow">&#8594;</div>
+              <div class="arrow right-arrow" onclick="moveSlide(1)">&#8594;</div>
             </div>
           </div>
           <div class="header-text_section03">
@@ -228,7 +286,6 @@
             <button type="button">View all</button>
           </div>
         </main>
-
       </div>
       <footer>  
         <div class="footer-content">  
@@ -275,7 +332,8 @@
             </div>  
         </div>  
   
-    </footer>  
+      </footer>   
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

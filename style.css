@@ -238,6 +238,10 @@ main {
   display: flex;
   margin-top: 200px;
 }
+.slides {
+  display: flex;
+  overflow: hidden;
+}
 .slide {
   background: linear-gradient(#67c3f3, #5a98f2);
   border-radius: 24px;
@@ -246,6 +250,8 @@ main {
   padding: 50px;
   margin: auto;
   margin-top: 200px;
+  display: none;
+  flex-direction: column;
 }
 .slide_title {
   text-align: center;
